@@ -1,0 +1,270 @@
+
+body {
+    background-image: url("gambar/background.jpg"); /* Pastikan path gambar benar */
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; /* Agar latar belakang tetap saat scroll */
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+
+.navbar {
+    background-color: #111; 
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    position: sticky; /* Menempel di atas saat di-scroll */
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    font-family: Laurasia;
+    letter-spacing: 2px;
+  
+}
+.navbar a.active{
+    color: #d66000;
+}
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: right; 
+    flex-grow: 1; /* Agar menu fleksibel dan mengisi ruang */
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: rgb(160, 160, 160); 
+    font-size: 20px;
+    font-weight: bold;
+    transition: color 0.3s;
+    font-family: "Poppins", sans-serif;
+}
+
+.navbar ul li a:hover {
+    color: #d66000; 
+}
+
+
+.logout-container {
+    margin-left: auto; 
+}
+
+.logout {
+    text-decoration: none;
+    color: rgb(73, 73, 73);
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 9px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    letter-spacing: 2px;
+    font-family: 'poopins', sans-serif;
+}
+
+.logout:hover {
+    background-color: #d66000;
+    color: white;
+}
+
+.logo-container {
+    margin-right: 20px; /* Memberikan sedikit jarak antara logo dan menu */
+}
+
+.logo {
+    width: 50px; 
+    height: auto;
+    display: block;
+}
+
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+
+}
+
+.utama{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+h2 {
+    text-align: center;
+    color: #111;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #333;
+    transition: border 0.3s;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    border: 1px solid #d66000;
+    outline: none;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #d66000;
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #ff7e2f;
+}
+
+a {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 1.1em;
+    color: #d66000;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ff7e2f;
+}
+
+/* Add some space around the page */
+
+
+
+
+footer{
+    background-color: #111;
+    font-family: "poppins", sans-serif;
+}
+.footerContainer{
+    width: 100%;
+    padding: 70px 30px 20px ;
+}
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding:  10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialIcons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0,9;
+}
+/* Hover affect on social media icon */
+.socialIcons a:hover{
+    background-color: #111;
+    transition: 0.5s;
+}
+.socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+.footerNav{
+    margin: 30px 0;
+}
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.footerNav ul li a{
+    color:white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+
+}
+.footerNav ul li a:hover{
+    opacity: 2;
+    color: #d66000;
+}
+.footerBottom{
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+.footerBottom p{
+    color: white;
+}
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+@media (max-width: 700px){
+    .footerNav ul{
+        flex-direction: column;
+    } 
+    .footerNav ul li{
+        width:100%;
+        text-align: center;
+        margin: 10px;
+    }
+    .socialIcons a{
+        padding: 8px;
+        margin: 4px;
+    }
+}

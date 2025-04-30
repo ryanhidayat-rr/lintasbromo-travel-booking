@@ -1,0 +1,202 @@
+/* Body */
+body {
+    background-color: #f4f4f4;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    min-height: 100%;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar .logo-container .logo {
+    height: 50px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin: 0 10px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.navbar ul li a.active,
+.navbar ul li a:hover {
+    background-color: #555;
+}
+
+.logout-container .logout {
+    text-decoration: none;
+    color: white;
+    background-color: #ff6347;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.logout-container .logout:hover {
+    background-color: #e5533d;
+}
+
+.logo-container {
+    margin-right: 20px;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+    display: block;
+}
+
+/* Main Form */
+.utama {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    margin-top: 80px; /* Added margin to prevent navbar overlap */
+}
+
+.utama h2 {
+    margin-bottom: 30px;
+    color: #333;
+    font-weight: 600;
+}
+
+.utama label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: 500;
+}
+
+.utama input[type="text"],
+.utama input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+    transition: border-color 0.3s ease;
+}
+
+.utama input:focus {
+    border-color: #3bc8f5;
+}
+
+.utama button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.utama button:hover {
+    background: linear-gradient(to right, #0072ff, #00c6ff);
+}
+
+.utama a {
+    display: inline-block;
+    margin-top: 20px;
+    color: #0072ff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.utama a:hover {
+    color: #0057d9;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 40px;
+}
+
+.footerNav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.footerNav ul li {
+    margin: 0 10px;
+}
+
+.footerNav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.socialIcons a {
+    margin: 0 10px;
+    color: white;
+    font-size: 20px;
+}
+
+.footerBottom {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.designer {
+    font-weight: bold;
+    color: #ffcc00;
+}

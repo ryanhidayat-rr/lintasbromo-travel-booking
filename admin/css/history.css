@@ -1,0 +1,183 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h2 {
+    color: #333;
+    font-size: 24px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 15px;
+}
+
+.navbar .logo-container img {
+    height: 50px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar ul li a:hover,
+.navbar ul li a.active {
+    color: #ff7f50;
+}
+
+.navbar .logout-container a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Table Styles */
+table {
+    width: 90%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+}
+
+table th, table td {
+    padding: 12px 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #333;
+    color: white;
+}
+
+table td {
+    background-color: #f9f9f9;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Payment Status Styles */
+table td span {
+    font-weight: bold;
+}
+
+/* Button Styles */
+button {
+    background-color: #ff7f50;
+    border: none;
+    color: white;
+    padding: 6px 12px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #e65c3e;
+}
+
+a {
+    color: #ff7f50;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .footerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+footer .socialIcons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 24px;
+}
+
+footer .footerNav ul {
+    list-style: none;
+}
+
+footer .footerNav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+footer .footerBottom {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .navbar ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .navbar .logout-container {
+        margin-top: 10px;
+    }
+
+    table {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    table td, table th {
+        padding: 10px;
+    }
+
+    footer .footerContainer {
+        flex-direction: column;
+    }
+
+    footer .footerNav ul {
+        margin-top: 10px;
+    }
+}

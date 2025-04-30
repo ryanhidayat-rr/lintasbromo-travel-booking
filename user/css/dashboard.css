@@ -1,0 +1,258 @@
+
+body {
+    background-image: url("");
+    background-position: center; 
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color: #111;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    position: sticky; /* Menempel di atas saat di-scroll */
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    font-family: 'poppins', sans-serif;
+    letter-spacing: 2px;
+  
+}
+.navbar a.active{
+    color: #d66000;
+}
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: right; 
+    flex-grow: 1; /* Agar menu fleksibel dan mengisi ruang */
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: rgb(160, 160, 160); 
+    font-size: 20px;
+    font-weight: bold;
+    transition: color 0.3s;
+    font-family: "Poppins", sans-serif;
+}
+
+.navbar ul li a:hover {
+    color: #d66000; 
+}
+
+
+.logout-container {
+    margin-left: auto; 
+}
+
+.logout {
+    text-decoration: none;
+    color: rgb(73, 73, 73);
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 9px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    letter-spacing: 2px;
+    font-family: 'poopins', sans-serif;
+}
+
+.logout:hover {
+    background-color: #d66000;
+    color: white;
+}
+
+.logo-container {
+    margin-right: 20px; /* Memberikan sedikit jarak antara logo dan menu */
+}
+
+.logo {
+    width: 50px; 
+    height: auto;
+    display: block;
+}
+
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+
+}
+
+h1 {
+    text-align: center;
+    font-size: 32px;
+    color: #333;
+    margin-top: 40px;
+}
+
+p {
+    text-align: center;
+    font-size: 20px;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #111;
+    font-family: 'Poppins', sans-serif;
+    padding: 50px 0 30px;
+    color: white;
+    text-align: center;
+}
+
+.footerContainer {
+    width: 100%;
+    padding: 0 30px;
+}
+
+.socialIcons {
+    display: flex;
+    justify-content: center;
+}
+
+.socialIcons a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.socialIcons a i {
+    font-size: 2em;
+    color: black;
+}
+
+.socialIcons a:hover {
+    background-color: #111;
+    transition: 0.5s;
+}
+
+.socialIcons a:hover i {
+    color: white;
+}
+
+.footerNav {
+    margin: 30px 0;
+}
+
+.footerNav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.footerNav ul li a {
+    color: white;
+    margin: 15px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.footerNav ul li a:hover {
+    opacity: 2;
+    color: #d66000;
+}
+
+.footerBottom {
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+
+.footerBottom p {
+    color: white;
+}
+
+.designer {
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+
+    form {
+        width: 90%;
+    }
+
+    footer {
+        padding: 30px 10px;
+    }
+
+    .footerNav ul {
+        flex-direction: column;
+    }
+
+    .footerNav ul li {
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+
+    .socialIcons a {
+        padding: 8px;
+        margin: 4px;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 28px;
+    }
+
+    form {
+        padding: 20px;
+    }
+
+    form label {
+        font-size: 14px;
+    }
+
+    form input, form button {
+        font-size: 14px;
+    }
+}

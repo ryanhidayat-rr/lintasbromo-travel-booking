@@ -1,0 +1,256 @@
+body {
+    background-image: url("gambar/bg.jpg");
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #111;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    letter-spacing: 2px;
+}
+
+.navbar a.active {
+    color: #d66000;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: right;
+    flex-grow: 1;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: rgb(160, 160, 160);
+    font-size: 20px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #d66000;
+}
+
+.logout-container {
+    margin-left: auto;
+}
+
+.logout {
+    text-decoration: none;
+    color: rgb(73, 73, 73);
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 9px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    letter-spacing: 2px;
+}
+
+.logout:hover {
+    background-color: #d66000;
+    color: white;
+}
+
+.logo-container {
+    margin-right: 20px;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+    display: block;
+}
+
+/* Header */
+h2 {
+    text-align: center;
+    color: #FF7F32;
+    margin-top: 50px;
+}
+
+/* Form */
+form {
+    margin-top: 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form label {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+    display: block;
+}
+
+form input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #FF7F32;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #e06b2c;
+}
+
+/* Footer */
+footer {
+    background-color: #111;
+    font-family: 'Poppins', sans-serif;
+    padding: 50px 0 30px;
+    color: white;
+    text-align: center;
+}
+
+.footerContainer {
+    width: 100%;
+    padding: 0 30px;
+}
+
+.socialIcons {
+    display: flex;
+    justify-content: center;
+}
+
+.socialIcons a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.socialIcons a i {
+    font-size: 2em;
+    color: black;
+}
+
+.socialIcons a:hover {
+    background-color: #111;
+    transition: 0.5s;
+}
+
+.socialIcons a:hover i {
+    color: white;
+}
+
+.footerNav {
+    margin: 30px 0;
+}
+
+.footerNav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.footerNav ul li a {
+    color: white;
+    margin: 15px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.footerNav ul li a:hover {
+    opacity: 2;
+    color: #d66000;
+}
+
+.footerBottom {
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+
+.footerBottom p {
+    color: white;
+}
+
+.designer {
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+
+    form {
+        width: 90%;
+    }
+
+    footer {
+        padding: 30px 10px;
+    }
+
+    .footerNav ul {
+        flex-direction: column;
+    }
+
+    .footerNav ul li {
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+
+    .socialIcons a {
+        padding: 8px;
+        margin: 4px;
+    }
+}
